@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מרכז המשימות והתגמולים</title>
+    <!-- Monetag Verification Meta Tag -->
+    <meta name="monetag" content="39c7e7b89793798cf0c4974f2081d655">
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --primary-hover: #4338ca;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #22c55e;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+        .stats-box {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .stat-item h3 {
+            font-size: 18px;
+            color: var(--accent);
+            margin-bottom: 4px;
+        }
+        .stat-item p {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 12px;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background-color: var(--primary-hover);
+        }
+        .btn-secondary {
+            background-color: #334155;
+        }
+        .btn-secondary:hover {
+            background-color: #475569;
+        }
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>מרכז המשימות והתגמולים</h1>
+            <p class="subtitle">השלם משימות וצפה בתכנים כדי לצבור רווחים יומיים</p>
+        </header>
+
+        <div class="stats-box">
+            <div class="stat-item">
+                <h3>₪200</h3>
+                <p>יעד משמרת יומי</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="completed-tasks">0</h3>
+                <p>משימות שהושלמו</p>
+            </div>
+        </div>
+
+        <!-- روابط شبكات الإعلانات -->
+        <a href="https://www.profitableratecpmnetwork.com/tnijh61g?key=dfbba..." target="_blank" class="btn" onclick="trackTask()">
+            התחל משימת רווחים (1)
+        </a>
+
+        <a href="https://ideali..." target="_blank" class="btn btn-secondary" onclick="trackTask()">
+            התחל משימת רווחים (2)
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2026 جميع الحقوق محفوظة - النظام يعمل عبر Vercel
+    </footer>
+
+    <script>
+        let count = 0;
+        function trackTask() {
+            count++;
+            document.getElementById('completed-tasks').innerText = count;
+        }
+    </script>
+</body>
+</html>
